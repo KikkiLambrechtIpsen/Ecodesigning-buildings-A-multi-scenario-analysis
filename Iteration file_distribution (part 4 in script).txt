@@ -1,0 +1,686 @@
+Climate change
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["A"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[8], color='black', zorder=0)
+plt.text(AD_PAL6[8], 18, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[8], color='darkblue', zorder=0)
+plt.text(AD_a[8]-1e6, 18, "a", horizontalalignment='right', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[8], color='maroon', zorder=0)
+plt.text(AD_b[8]+1e6, 18, "b", horizontalalignment='left', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[8], color='orange', zorder=0)
+plt.text(AD_c[8], 18, "c", horizontalalignment='center', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[8], color='pink', zorder=0)
+plt.text(AD_d[8], 18, "d", horizontalalignment='center', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[8], color='red', zorder=0)
+plt.text(AD_e[8], 18, "e", horizontalalignment='center', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[8], color='lightblue', zorder=0)
+plt.text(AD_f[8], 18, "f", horizontalalignment='center', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[8], color='grey', zorder=0)
+plt.text(AD_g[8], 18, "g", horizontalalignment='center', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[8], color='green', zorder=0)
+plt.text(AD_h[8], 18, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Climate change [kg CO2-eq.]")
+plt.savefig('distribution_Climate change.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Fossil and nuclear energy use
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["B"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[9], color='black', zorder=0)
+plt.text(AD_PAL6[9], 21, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[9], color='darkblue', zorder=0)
+plt.text(AD_a[9]-1e7, 21, "a", horizontalalignment='right', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[9], color='maroon', zorder=0)
+plt.text(AD_b[9], 21, "b", horizontalalignment='center', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[9], color='orange', zorder=0)
+plt.text(AD_c[9], 21, "c", horizontalalignment='left', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[9], color='pink', zorder=0)
+plt.text(AD_d[9], 21, "d", horizontalalignment='center', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[9], color='red', zorder=0)
+plt.text(AD_e[9], 21, "e", horizontalalignment='center', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[9], color='lightblue', zorder=0)
+plt.text(AD_f[9]+1e7, 21, "f", horizontalalignment='left', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[9], color='grey', zorder=0)
+plt.text(AD_g[9], 21, "g", horizontalalignment='right', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[9], color='green', zorder=0)
+plt.text(AD_h[9], 21, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Fossil and nuclear energy use [MJ-deprived]")
+plt.savefig('distribution_Fossil and nuclear energy use.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Mineral resources use
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["S"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[10], color='black', zorder=0)
+plt.text(AD_PAL6[10], 3.8, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[10], color='darkblue', zorder=0)
+plt.text(AD_a[10], 3.8, "a", horizontalalignment='center', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[10], color='maroon', zorder=0)
+plt.text(AD_b[10], 3.8, "b", horizontalalignment='center', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[10], color='orange', zorder=0)
+plt.text(AD_c[10], 3.8, "c", horizontalalignment='center', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[10], color='pink', zorder=0)
+plt.text(AD_d[10], 3.8, "d", horizontalalignment='center', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[10], color='red', zorder=0)
+plt.text(AD_e[10], 3.8, "e", horizontalalignment='center', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[10], color='lightblue', zorder=0)
+plt.text(AD_f[10], 3.8, "f", horizontalalignment='center', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[10], color='grey', zorder=0)
+plt.text(AD_g[10], 3.8, "g", horizontalalignment='center', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[10], color='green', zorder=0)
+plt.text(AD_h[10], 3.8, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Mineral resources use [kg-deprived]")
+plt.savefig('distribution_Mineral resources use.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Photochemical oxidant formation
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["D"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[11], color='black', zorder=0)
+plt.text(AD_PAL6[11], 24, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[11], color='darkblue', zorder=0)
+plt.text(AD_a[11]-0.5e4, 24, "a", horizontalalignment='right', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[11], color='maroon', zorder=0)
+plt.text(AD_b[11]+0.5e4, 24, "b", horizontalalignment='left', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[11], color='orange', zorder=0)
+plt.text(AD_c[11], 24, "c", horizontalalignment='center', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[11], color='pink', zorder=0)
+plt.text(AD_d[11], 24, "d", horizontalalignment='left', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[11], color='red', zorder=0)
+plt.text(AD_e[11], 24, "e", horizontalalignment='center', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[11], color='lightblue', zorder=0)
+plt.text(AD_f[11], 24, "f", horizontalalignment='center', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[11], color='grey', zorder=0)
+plt.text(AD_g[11], 24, "g", horizontalalignment='center', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[11], color='green', zorder=0)
+plt.text(AD_h[11], 24, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Photochemical oxidant formation [kg NMVOC-eq.]")
+plt.savefig('distribution_Photochemical oxidant formation.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Ozone Layer Depletion
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["E"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[12], color='black', zorder=0)
+plt.text(AD_PAL6[12], 19, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[12], color='darkblue', zorder=0)
+plt.text(AD_a[12], 19, "a", horizontalalignment='right', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[12], color='maroon', zorder=0)
+plt.text(AD_b[12], 19, "b", horizontalalignment='center', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[12], color='orange', zorder=0)
+plt.text(AD_c[12], 19, "c", horizontalalignment='center', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[12], color='pink', zorder=0)
+plt.text(AD_d[12], 19, "d", horizontalalignment='left', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[12], color='red', zorder=0)
+plt.text(AD_e[12], 19, "e", horizontalalignment='center', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[12], color='lightblue', zorder=0)
+plt.text(AD_f[12]+0.05, 19, "f", horizontalalignment='left', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[12], color='grey', zorder=0)
+plt.text(AD_g[12], 19, "g", horizontalalignment='center', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[12], color='green', zorder=0)
+plt.text(AD_h[12], 19, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Ozone Layer Depletion [kg CFC11-eq.]")
+plt.savefig('distribution_Ozone Layer Depletion.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Freshwater ecotoxicity
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["F"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[13], color='black', zorder=0)
+plt.text(AD_PAL6[13], 9, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[13], color='darkblue', zorder=0)
+plt.text(AD_a[13]-5e10, 9, "a", horizontalalignment='right', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[13], color='maroon', zorder=0)
+plt.text(AD_b[13], 9, "b", horizontalalignment='center', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[13], color='orange', zorder=0)
+plt.text(AD_c[13], 9, "c", horizontalalignment='center', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[13], color='pink', zorder=0)
+plt.text(AD_d[13]+7e10, 9, "d", horizontalalignment='left', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[13], color='red', zorder=0)
+plt.text(AD_e[13]-1e10, 9, "e", horizontalalignment='right', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[13], color='lightblue', zorder=0)
+plt.text(AD_f[13]-3e10, 9, "f", horizontalalignment='right', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[13], color='grey', zorder=0)
+plt.text(AD_g[13], 9, "g", horizontalalignment='center', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[13], color='green', zorder=0)
+plt.text(AD_h[13], 9, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Freshwater ecotoxicity [CTUe]")
+plt.savefig('distribution_Freshwater ecotoxicity.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Human toxicity cancer
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["G"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[14], color='black', zorder=0)
+plt.text(AD_PAL6[14], 21.5, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[14], color='darkblue', zorder=0)
+plt.text(AD_a[14]-0.5, 21.5, "a", horizontalalignment='right', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[14], color='maroon', zorder=0)
+plt.text(AD_b[14], 21.5, "b", horizontalalignment='left', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[14], color='orange', zorder=0)
+plt.text(AD_c[14], 21.5, "c", horizontalalignment='center', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[14], color='pink', zorder=0)
+plt.text(AD_d[14], 21.5, "d", horizontalalignment='right', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[14], color='red', zorder=0)
+plt.text(AD_e[14], 21.5, "e", horizontalalignment='center', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[14], color='lightblue', zorder=0)
+plt.text(AD_f[14]-0.3, 21.5, "f", horizontalalignment='center', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[14], color='grey', zorder=0)
+plt.text(AD_g[14], 21.5, "g", horizontalalignment='left', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[14], color='green', zorder=0)
+plt.text(AD_h[14], 21.5, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Human toxicity cancer [CTUh]")
+plt.savefig('distribution_Human toxicity cancer.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Human toxicity non cancer
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["H"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[15], color='black', zorder=0)
+plt.text(AD_PAL6[15], 14.5, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[15], color='darkblue', zorder=0)
+plt.text(AD_a[15]-0.5, 14.5, "a", horizontalalignment='right', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[15], color='maroon', zorder=0)
+plt.text(AD_b[15]+0.5, 14.5, "b", horizontalalignment='left', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[15], color='orange', zorder=0)
+plt.text(AD_c[15], 14.5, "c", horizontalalignment='center', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[15], color='pink', zorder=0)
+plt.text(AD_d[15], 14.5, "d", horizontalalignment='center', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[15], color='red', zorder=0)
+plt.text(AD_e[15], 14.5, "e", horizontalalignment='center', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[15], color='lightblue', zorder=0)
+plt.text(AD_f[15]-0.3, 14.5, "f", horizontalalignment='center', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[15], color='grey', zorder=0)
+plt.text(AD_g[15], 14.5, "g", horizontalalignment='center', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[15], color='green', zorder=0)
+plt.text(AD_h[15], 14.5, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Human toxicity non cancer [CTUh]")
+plt.savefig('distribution_Human toxicity non cancer.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Freshwater acidification
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["I"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[16], color='black', zorder=0)
+plt.text(AD_PAL6[16], 12.5, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[16], color='darkblue', zorder=0)
+plt.text(AD_a[16]-0.04, 12.5, "a", horizontalalignment='right', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[16], color='maroon', zorder=0)
+plt.text(AD_b[16], 12.5, "b", horizontalalignment='left', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[16], color='orange', zorder=0)
+plt.text(AD_c[16], 12.5, "c", horizontalalignment='center', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[16], color='pink', zorder=0)
+plt.text(AD_d[16], 12.5, "d", horizontalalignment='center', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[16], color='red', zorder=0)
+plt.text(AD_e[16], 12.5, "e", horizontalalignment='left', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[16], color='lightblue', zorder=0)
+plt.text(AD_f[16]-0.01, 12.5, "f", horizontalalignment='right', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[16], color='grey', zorder=0)
+plt.text(AD_g[16], 12.5, "g", horizontalalignment='center', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[16], color='green', zorder=0)
+plt.text(AD_h[16], 12.5, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Freshwater acidification [kg SO2-eq.]")
+plt.savefig('distribution_Freshwater acidification.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Terrestrial acidification
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["J"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[17], color='black', zorder=0)
+plt.text(AD_PAL6[17], 13, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[17], color='darkblue', zorder=0)
+plt.text(AD_a[17]-10, 13, "a", horizontalalignment='right', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[17], color='maroon', zorder=0)
+plt.text(AD_b[17], 13, "b", horizontalalignment='left', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[17], color='orange', zorder=0)
+plt.text(AD_c[17], 13, "c", horizontalalignment='center', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[17], color='pink', zorder=0)
+plt.text(AD_d[17], 13, "d", horizontalalignment='center', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[17], color='red', zorder=0)
+plt.text(AD_e[17], 13, "e", horizontalalignment='left', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[17], color='lightblue', zorder=0)
+plt.text(AD_f[17]-25, 13, "f", horizontalalignment='right', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[17], color='grey', zorder=0)
+plt.text(AD_g[17], 13, "g", horizontalalignment='center', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[17], color='green', zorder=0)
+plt.text(AD_h[17], 13, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Terrestrial acidification [kg SO2-eq.]")
+plt.savefig('distribution_Terrestrial acidification.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Freshwater eutrophication
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["K"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[18], color='black', zorder=0)
+plt.text(AD_PAL6[18], 9.7, "PAL6", horizontalalignment='right', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[18], color='darkblue', zorder=0)
+plt.text(AD_a[18], 9.7, "a", horizontalalignment='left', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[18], color='maroon', zorder=0)
+plt.text(AD_b[18], 9.7, "b", horizontalalignment='left', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[18], color='orange', zorder=0)
+plt.text(AD_c[18], 9.7, "c", horizontalalignment='right', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[18], color='pink', zorder=0)
+plt.text(AD_d[18], 9.7, "d", horizontalalignment='center', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[18], color='red', zorder=0)
+plt.text(AD_e[18], 9.7, "e", horizontalalignment='center', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[18], color='lightblue', zorder=0)
+plt.text(AD_f[18]-10, 9.7, "f", horizontalalignment='right', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[18], color='grey', zorder=0)
+plt.text(AD_g[18], 9.7, "g", horizontalalignment='center', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[18], color='green', zorder=0)
+plt.text(AD_h[18], 9.7, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Freshwater eutrophication [kg PO4 P-lim eq.]")
+plt.savefig('distribution_Freshwater eutrophication.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Marine eutrophication
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["L"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[19], color='black', zorder=0)
+plt.text(AD_PAL6[19], 21, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[19], color='darkblue', zorder=0)
+plt.text(AD_a[19], 21, "a", horizontalalignment='left', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[19], color='maroon', zorder=0)
+plt.text(AD_b[19], 21, "b", horizontalalignment='right', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[19], color='orange', zorder=0)
+plt.text(AD_c[19], 21, "c", horizontalalignment='right', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[19], color='pink', zorder=0)
+plt.text(AD_d[19], 21, "d", horizontalalignment='center', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[19], color='red', zorder=0)
+plt.text(AD_e[19], 21, "e", horizontalalignment='left', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[19], color='lightblue', zorder=0)
+plt.text(AD_f[19], 21, "f", horizontalalignment='center', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[19], color='grey', zorder=0)
+plt.text(AD_g[19], 21, "g", horizontalalignment='right', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[19], color='green', zorder=0)
+plt.text(AD_h[19], 21, "h", horizontalalignment='right', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Marine eutrophication [kg N N-lim eq.]")
+#plt.savefig('distribution_Marine eutrophication.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Land transformation, biodiversity
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["M"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[20], color='black', zorder=0)
+plt.text(AD_PAL6[20], 5.6, "PAL6", horizontalalignment='center', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[20], color='darkblue', zorder=0)
+plt.text(AD_a[20], 5.6, "a", horizontalalignment='center', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[20], color='maroon', zorder=0)
+plt.text(AD_b[20], 5.6, "b", horizontalalignment='center', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[20], color='orange', zorder=0)
+plt.text(AD_c[20], 5.6, "c", horizontalalignment='center', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[20], color='pink', zorder=0)
+plt.text(AD_d[20], 5.6, "d", horizontalalignment='center', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[20], color='red', zorder=0)
+plt.text(AD_e[20], 5.6, "e", horizontalalignment='center', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[20], color='lightblue', zorder=0)
+plt.text(AD_f[20], 5.6, "f", horizontalalignment='center', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[20], color='grey', zorder=0)
+plt.text(AD_g[20], 5.6, "g", horizontalalignment='center', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[20], color='green', zorder=0)
+plt.text(AD_h[20], 5.6, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Land transformation, biodiversity [m2 arable land eq.]")
+#plt.savefig('distribution_Land transformation, biodiversity.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Land occupation, biodiversity
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["N"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[21], color='black', zorder=0)
+plt.text(AD_PAL6[21]+1e6, 16.5, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[21], color='darkblue', zorder=0)
+plt.text(AD_a[21], 16.5, "a", horizontalalignment='left', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[21], color='maroon', zorder=0)
+plt.text(AD_b[21]-0.4e6, 16.5, "b", horizontalalignment='right', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[21], color='orange', zorder=0)
+plt.text(AD_c[21]-0.8e6, 16.5, "c", horizontalalignment='right', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[21], color='pink', zorder=0)
+plt.text(AD_d[21], 16.5, "d", horizontalalignment='center', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[21], color='red', zorder=0)
+plt.text(AD_e[21], 16.5, "e", horizontalalignment='left', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[21], color='lightblue', zorder=0)
+plt.text(AD_f[21], 16.5, "f", horizontalalignment='center', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[21], color='grey', zorder=0)
+plt.text(AD_g[21]-1.5e6, 16.5, "g", horizontalalignment='right', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[21], color='green', zorder=0)
+plt.text(AD_h[21], 16.5, "h", horizontalalignment='right', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Land occupation, biodiversity [m2 arable land eq. · yr]")
+plt.savefig('distribution_Land occupation, biodiversity.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Particulate matter formation
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["O"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[22], color='black', zorder=0)
+plt.text(AD_PAL6[22], 10.5, "PAL6", horizontalalignment='left', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[22], color='darkblue', zorder=0)
+plt.text(AD_a[22], 10.5, "a", horizontalalignment='right', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[22], color='maroon', zorder=0)
+plt.text(AD_b[22], 10.5, "b", horizontalalignment='center', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[22], color='orange', zorder=0)
+plt.text(AD_c[22], 10.5, "c", horizontalalignment='center', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[22], color='pink', zorder=0)
+plt.text(AD_d[22], 10.5, "d", horizontalalignment='left', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[22], color='red', zorder=0)
+plt.text(AD_e[22]-700, 10.5, "e", horizontalalignment='right', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[22], color='lightblue', zorder=0)
+plt.text(AD_f[22]+700, 10.5, "f", horizontalalignment='left', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[22], color='grey', zorder=0)
+plt.text(AD_g[22], 10.5, "g", horizontalalignment='center', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[22], color='green', zorder=0)
+plt.text(AD_h[22], 10.5, "h", horizontalalignment='center', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Particulate matter formation [kg PM2.5-eq.]")
+plt.savefig('distribution_Particulate matter formation.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Ionizing radiations
+
+# Plot histogram
+#define the color palette
+color=sns.cubehelix_palette(start=2, rot=0, dark=.2, light=.6, reverse=True,)
+sns.set_palette(color)
+#set the style of the plot
+sns.set_style("ticks")
+# make the actuale plot
+hist = sns.histplot(x=df_result["P"], stat='percent', bins=100, kde=True, zorder=1)
+sns.despine()
+# Add a vertical lines to the histogram and add text to explain what the line represents
+plt.axvline(x=AD_PAL6[23], color='black', zorder=0)
+plt.text(AD_PAL6[23], 19.5, "PAL6", horizontalalignment='center', size='medium', color='black', weight='semibold')
+
+plt.axvline(x=AD_a[23], color='darkblue', zorder=0)
+plt.text(AD_a[23], 19.5, "a", horizontalalignment='right', size='medium', color='darkblue', weight='semibold')
+
+plt.axvline(x=AD_b[23], color='maroon', zorder=0)
+plt.text(AD_b[23], 19.5, "b", horizontalalignment='center', size='medium', color='maroon', weight='semibold')
+
+plt.axvline(x=AD_c[23], color='orange', zorder=0)
+plt.text(AD_c[23], 19.5, "c", horizontalalignment='center', size='medium', color='orange', weight='semibold')
+
+plt.axvline(x=AD_d[23], color='pink', zorder=0)
+plt.text(AD_d[23], 19.5, "d", horizontalalignment='center', size='medium', color='pink', weight='semibold')
+
+plt.axvline(x=AD_e[23], color='red', zorder=0)
+plt.text(AD_e[23]+5e6, 19.5, "e", horizontalalignment='left', size='medium', color='red', weight='semibold')
+
+plt.axvline(x=AD_f[23], color='lightblue', zorder=0)
+plt.text(AD_f[23]+5e6, 19.5, "f", horizontalalignment='left', size='medium', color='lightblue', weight='semibold')
+
+plt.axvline(x=AD_g[23], color='grey', zorder=0)
+plt.text(AD_g[23]-5e6, 19.5, "g", horizontalalignment='right', size='medium', color='grey', weight='semibold')
+
+plt.axvline(x=AD_h[23], color='green', zorder=0)
+plt.text(AD_h[23]+3e7, 19.5, "h", horizontalalignment='left', size='medium', color='green', weight='semibold')
+
+hist.set_xlabel("Ionizing radiations [Bq C-14 eq.]")
+plt.savefig('distribution_Ionizing radiations.png')

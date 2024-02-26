@@ -1,0 +1,176 @@
+climate change
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.A<8.645895e+05)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Climate change.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+
+plt.savefig('optimize_climate change.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Fossil and nuclear energy use
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.B<9.470050e+06)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Fossil and nuclear energy use.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Fossil and nuclear energy use.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Mineral resources use
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.S<5.702096e+03)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Mineral resources use.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Mineral resources use.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Photochemical oxidant formation
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.D<3.522154e+03)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Photochemical oxidant formation.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Photochemical oxidant formation.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Ozone Layer Depletion
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.E<5.320713e-02)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Ozone Layer Depletion.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Ozone Layer Depletion.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Freshwater ecotoxicity
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.F<-6.004537e+11)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Freshwater ecotoxicity.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+
+plt.savefig('optimize_Freshwater ecotoxicity.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Human toxicity cancer
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.G<1.849725e-02)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Human toxicity cancer.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Human toxicity cancer.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Human toxicity non cancer
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.H<-4.507209e-03)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Human toxicity non cancer.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Human toxicity non cancer.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Freshwater acidification
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.I<1.022037e-02)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Freshwater acidification.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Freshwater acidification.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Terrestrial acidification 
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.J<8.660217e+00)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Terrestrial acidification.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Terrestrial acidification.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Freshwater eutrophication
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.K<-1.041643e+02)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Freshwater eutrophication.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Freshwater eutrophication.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Marine eutrophication
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.L<2.983565e+01)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Marine eutrophication.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Marine eutrophication.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Land transformation, biodiversity
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.M<7.099739e+02)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Land transformation.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Land transformation, biodiversity.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Land occupation, biodiversity
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.N<3.510491e+05)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Land occupation.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Land occupation, biodiversity.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Particulate matter formation
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.O<-2.596668e+02)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Particulate matter formation.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Particulate matter formation.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Ionizing radiations
+
+#minimizing one impact category at the time
+df_filt_one_min = df_result[(df_result.P<-5.555879e+08)]
+
+df_filt_one_min.to_csv(r'C:\Users\kikki\Sync\50-Kikki Ipsen\optimize_one_Ionizing radiations.csv', sep=';', index = True, header = True)
+len(df_filt_one_min)
+
+plt.savefig('optimize_Ionizing radiations.png')

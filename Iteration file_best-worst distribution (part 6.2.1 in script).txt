@@ -1,0 +1,350 @@
+climate change
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["A"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["A"], color="darkgreen")
+sns.stripplot(x=df_filt_max["A"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[0], color='darkgreen')
+plt.axvline(x=df_worst[0], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(0.7e7, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(3.7e7, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Climate change [kg CO2-eq.]")
+plt.savefig('best-worst_Climate change.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Fossil and nuclear energy use
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["B"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["B"], color="darkgreen")
+sns.stripplot(x=df_filt_max["B"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[1], color='darkgreen')
+plt.axvline(x=df_worst[1], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(0.3e8, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(2.5e8, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Fossil and nuclear energy use [MJ-deprived]")
+plt.savefig('best-worst_Fossil and nuclear energy use.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Mineral resources use
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["S"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["S"], color="darkgreen")
+sns.stripplot(x=df_filt_max["S"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[2], color='darkgreen')
+plt.axvline(x=df_worst[2], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(0.17e6, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(0.47e6, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Mineral resources use [kg-deprived]")
+plt.savefig('best-worst_Mineral resources use.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Photochemical oxidant formation
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["D"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["D"], color="darkgreen")
+sns.stripplot(x=df_filt_max["D"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[3], color='darkgreen')
+plt.axvline(x=df_worst[3], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(1.2e4, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(9e4, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Photochemical oxidant formation [kg NMVOC-eq.]")
+plt.savefig('best-worst_Photochemical oxidant formation.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Ozone Layer Depletion
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["E"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["E"], color="darkgreen")
+sns.stripplot(x=df_filt_max["E"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[4], color='darkgreen')
+plt.axvline(x=df_worst[4], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(0.05, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(0.97, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Ozone Layer Depletion [kg CFC11-eq.]")
+plt.savefig('best-worst_Ozone Layer Depletion.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Freshwater ecotoxicity
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["F"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["F"], color="darkgreen")
+sns.stripplot(x=df_filt_max["F"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[5], color='darkgreen')
+plt.axvline(x=df_worst[5], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(-3.5e11, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(1.8e11, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Freshwater ecotoxicity [CTUe]")
+plt.savefig('best-worst_Freshwater ecotoxicity.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Human toxicity cancer
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["G"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["G"], color="darkgreen")
+sns.stripplot(x=df_filt_max["G"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[6], color='darkgreen')
+plt.axvline(x=df_worst[6], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(0.7, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(6, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Human toxicity cancer [CTUh]")
+plt.savefig('best-worst_Human toxicity cancer.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Human toxicity non cancer
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["H"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["H"], color="darkgreen")
+sns.stripplot(x=df_filt_max["H"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[7], color='darkgreen')
+plt.axvline(x=df_worst[7], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(1, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(13, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Human toxicity non cancer [CTUh]")
+plt.savefig('best-worst_Human toxicity non cancer.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Freshwater acidification
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["I"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["I"], color="darkgreen")
+sns.stripplot(x=df_filt_max["I"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[8], color='darkgreen')
+plt.axvline(x=df_worst[8], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(0.1, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(0.7, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Freshwater acidification [kg SO2-eq.]")
+plt.savefig('best-worst_Freshwater acidification.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Terrestrial acidification 
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["J"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["J"], color="darkgreen")
+sns.stripplot(x=df_filt_max["J"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[9], color='darkgreen')
+plt.axvline(x=df_worst[9], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(80, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(550, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Terrestrial acidification [kg SO2-eq.]")
+plt.savefig('best-worst_Terrestrial acidification.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Freshwater eutrophication
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["K"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["K"], color="darkgreen")
+sns.stripplot(x=df_filt_max["K"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[10], color='darkgreen')
+plt.axvline(x=df_worst[10], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(40, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(300, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Freshwater eutrophication [kg PO4 P-lim eq.]")
+plt.savefig('best-worst_Freshwater eutrophication.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Marine eutrophication
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["L"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["L"], color="darkgreen")
+sns.stripplot(x=df_filt_max["L"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[11], color='darkgreen')
+plt.axvline(x=df_worst[11], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(0.2e3, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(1.7e3, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Marine eutrophication [kg N N-lim eq.]")
+plt.savefig('best-worst_Marine eutrophication.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Land transformation, biodiversity
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["M"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["M"], color="darkgreen")
+sns.stripplot(x=df_filt_max["M"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[12], color='darkgreen')
+plt.axvline(x=df_worst[12], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(-2.5e3, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(6e3, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Land transformation, biodiversity [m2 arable land eq.]")
+plt.savefig('best-worst_Land transformation, biodiversity.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Land occupation, biodiversity
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["N"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["N"], color="darkgreen")
+sns.stripplot(x=df_filt_max["N"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[13], color='darkgreen')
+plt.axvline(x=df_worst[13], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(-0.9e7, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(0.4e7, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Land occupation, biodiversity [m2 arable land eq. · yr]")
+plt.savefig('best-worst_Land occupation, biodiversity.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Particulate matter formation
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["O"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["O"], color="darkgreen")
+sns.stripplot(x=df_filt_max["O"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[14], color='darkgreen')
+plt.axvline(x=df_worst[14], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(0.4e4, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(1.8e4, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Particulate matter formation [kg PM2.5-eq.]")
+plt.savefig('best-worst_Particulate matter formation.png')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Ionizing radiations
+
+#set the style of the plot
+sns.set_style("ticks")
+
+# make the actuale plot
+box=sns.boxplot(x=df_r["P"], width=0.2, color="white")
+sns.stripplot(x=df_filt_min["P"], color="darkgreen")
+sns.stripplot(x=df_filt_max["P"], color="maroon")
+sns.despine(trim=True)
+
+# add a vertical line to the histogram
+plt.axvline(x=df_best[15], color='darkgreen')
+plt.axvline(x=df_worst[15], color='maroon')
+# Add text to explain what the line represents
+
+plt.text(-1.8e8, -0.15, '39th percentile', size='medium', color='darkgreen', weight='semibold')
+plt.text(0.4e8, -0.15, '70th percentile', size='medium', color='maroon', weight='semibold')
+box.set_xlabel("Ionizing radiations [Bq C-14 eq.]")
+plt.savefig('best-worst_Ionizing radiations.png')

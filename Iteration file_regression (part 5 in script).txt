@@ -1,0 +1,158 @@
+Climate change
+
+fit = ols('A ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Climate change.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Fossil and nuclear energy use
+
+fit = ols('B ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Fossil and nuclear energy use.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Mineral resources use
+
+fit = ols('S ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Mineral resources use.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Photochemical oxidant formation
+
+fit = ols('D ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Photochemical oxidant formation.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Ozone Layer Depletion
+
+fit = ols('E ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Ozone Layer Depletion.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Freshwater ecotoxicity
+
+fit = ols('F ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Freshwater ecotoxicity.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Human toxicity cancer
+
+fit = ols('G ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Human toxicity cancer.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Human toxicity non cancer
+
+fit = ols('H ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Human toxicity non cancer.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Freshwater acidification
+
+fit = ols('I ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Freshwater acidification.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Terrestrial acidification
+
+fit = ols('J ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Terrestrial acidification.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Freshwater eutrophication
+
+fit = ols('K ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Freshwater eutrophication.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Marine eutrophication
+
+fit = ols('L ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Marine eutrophication.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Land transformation, biodiversity
+
+fit = ols('M ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Land transformation.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Land occupation, biodiversity
+
+fit = ols('N ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Land occupation.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Particulate matter formation
+
+fit = ols('O ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Particulate matter formation.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Ionizing radiations
+
+fit = ols('P ~ C(y1) + C(y2) + C(y3) + C(y4) + C(y5) + C(y6) + C(y7) + C(y8)', data=df_result).fit()
+
+with open('Regression_Ionizing radiations.txt', 'w') as fh:
+    fh.write(fit.summary().as_text())
+
+print(fit.summary())

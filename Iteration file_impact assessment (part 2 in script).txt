@@ -1,0 +1,143 @@
+y1
+mydb = pd.read_csv('Database_y1.csv', header = 0, sep = ";") # using csv file avoids encoding problem
+mydb.head()
+
+t_db1 = bw.Database('y1_database') # it works because the database name in the excel file is the same
+# shut down all other notebooks using the same project
+t_db1.write(bw2_db)
+
+housing = [t_db1.get('PAL6_total'), t_db1.get('a_total'), t_db1.get('b_total'), t_db1.get('c_total'), t_db1.get('d_total'),
+t_db1.get('e_total'), t_db1.get('f_total'), t_db1.get('g_total'), t_db1.get('h_total')]
+
+idx = ['PAL6', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+df1 = pd.DataFrame(arr_transpose, index = idx, columns = category)
+df1.to_excel(r'C:\Users\kikki\Sync\50-Kikki Ipsen\y1_results.xlsx',index = True, header = True)
+df1
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+y2
+mydb = pd.read_csv('Database_y2.csv', header = 0, sep = ";") # using csv file avoids encoding problem
+mydb.head()
+
+t_db2 = bw.Database('y2_database') # it works because the database name in the excel file is the same
+# shut down all other notebooks using the same project
+t_db2.write(bw2_db)
+
+housing = [t_db2.get('PAL6_total'), t_db2.get('a_total'), t_db2.get('b_total'), t_db2.get('c_total'), t_db2.get('d_total'),
+t_db2.get('e_total'), t_db2.get('f_total'), t_db2.get('g_total')]
+
+idx = ['PAL6', 'a', 'b', 'c', 'd', 'e', 'f', 'g']
+df2 = pd.DataFrame(arr_transpose, index = idx, columns = category)
+df2.to_excel(r'C:\Users\kikki\Sync\50-Kikki Ipsen\y2_results.xlsx',index = True, header = True)
+df2
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+y3
+mydb = pd.read_csv('Database_y3.csv', header = 0, sep = ";") # using csv file avoids encoding problem
+mydb.head()
+
+t_db3 = bw.Database('y3_database') # it works because the database name in the excel file is the same
+# shut down all other notebooks using the same project
+t_db3.write(bw2_db)
+
+housing = [t_db3.get('PAL6_total'), t_db3.get('a_total'), t_db3.get('b_total'), t_db3.get('c_total'), t_db3.get('d_total'),
+t_db3.get('e_total'), t_db3.get('f_total'), t_db3.get('g_total'), t_db3.get('h_total')]
+
+idx = ['PAL6', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+df3 = pd.DataFrame(arr_transpose, index = idx, columns = category)
+df3.to_excel(r'C:\Users\kikki\Sync\50-Kikki Ipsen\y3_results.xlsx',index = True, header = True)
+df3
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+y4
+mydb = pd.read_csv('Database_y4.csv', header = 0, sep = ";") # using csv file avoids encoding problem
+mydb.head()
+
+t_db4 = bw.Database('y4_database') # it works because the database name in the excel file is the same
+# shut down all other notebooks using the same project
+t_db4.write(bw2_db)
+
+
+housing = [t_db4.get('PAL6_total'), t_db4.get('a_total'), t_db4.get('b_total'), t_db4.get('c_total'), t_db4.get('d_total'),
+t_db4.get('e_total'), t_db4.get('f_total'), t_db4.get('g_total')]
+
+idx = ['PAL6', 'a', 'b', 'c', 'd', 'e', 'f', 'g']
+df4 = pd.DataFrame(arr_transpose, index = idx, columns = category)
+df4.to_excel(r'C:\Users\kikki\Sync\50-Kikki Ipsen\y4_results.xlsx',index = True, header = True)
+df4
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+y5
+mydb = pd.read_csv('Database_y5.csv', header = 0, sep = ";") # using csv file avoids encoding problem
+mydb.head()
+
+t_db5 = bw.Database('y5_database') # it works because the database name in the excel file is the same
+# shut down all other notebooks using the same project
+t_db5.write(bw2_db)
+
+
+housing = [t_db5.get('PAL6_total'), t_db5.get('b_total'), t_db5.get('c_total'), t_db5.get('d_total'),t_db5.get('h_total')]
+
+idx = ['PAL6', 'b', 'c', 'd', 'h']
+df5 = pd.DataFrame(arr_transpose, index = idx, columns = category)
+df5.to_excel(r'C:\Users\kikki\Sync\50-Kikki Ipsen\y5_results.xlsx',index = True, header = True)
+df5
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+y6
+mydb = pd.read_csv('Database_y6.csv', header = 0, sep = ";") # using csv file avoids encoding problem
+mydb.head()
+
+t_db6 = bw.Database('y6_database') # it works because the database name in the excel file is the same
+# shut down all other notebooks using the same project
+t_db6.write(bw2_db)
+
+
+housing = [t_db6.get('PAL6_total'), t_db6.get('a_total'), t_db6.get('b_total'), t_db6.get('c_total'),
+t_db6.get('d_total'),t_db6.get('e_total'),t_db6.get('g_total')]
+
+idx = ['PAL6', 'a', 'b', 'c', 'd', 'e', 'g']
+df6 = pd.DataFrame(arr_transpose, index = idx, columns = category)
+df6.to_excel(r'C:\Users\kikki\Sync\50-Kikki Ipsen\y6_results.xlsx',index = True, header = True)
+df6
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+y7
+mydb = pd.read_csv('Database_y7.csv', header = 0, sep = ";") # using csv file avoids encoding problem
+mydb.head()
+
+t_db7 = bw.Database('y7_database') # it works because the database name in the excel file is the same
+# shut down all other notebooks using the same project
+t_db7.write(bw2_db)
+
+
+housing = [t_db7.get('PAL6_total'), t_db7.get('a_total'), t_db7.get('c_total'), t_db7.get('h_total')]
+
+idx = ['PAL6', 'a', 'c', 'h']
+df7 = pd.DataFrame(arr_transpose, index = idx, columns = category)
+df7.to_excel(r'C:\Users\kikki\Sync\50-Kikki Ipsen\y7_results.xlsx',index = True, header = True)
+df7
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+y8
+mydb = pd.read_csv('Database_y8.csv', header = 0, sep = ";") # using csv file avoids encoding problem
+mydb.head()
+
+t_db8 = bw.Database('y8_database') # it works because the database name in the excel file is the same
+# shut down all other notebooks using the same project
+t_db8.write(bw2_db)
+
+
+housing = [t_db8.get('PAL6_total'), t_db8.get('a_total'), t_db8.get('c_total'), t_db8.get('h_total')]
+
+idx = ['PAL6', 'a', 'c', 'h']
+df8 = pd.DataFrame(arr_transpose, index = idx, columns = category)
+df8.to_excel(r'C:\Users\kikki\Sync\50-Kikki Ipsen\y8_results.xlsx',index = True, header = True)
+df8
